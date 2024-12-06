@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ApplicationTeste</string>
+    <string name="calc">Calculadora</string>
+    <string name="numEntry">Entre com um número</string>
+    <string name="res">Resultado:</string>
+    <string name="soma">SOM</string>
+    <string name="sub">SUB</string>
+    <string name="mul">MUL</string>
+    <string name="div">DIV</string>
 </resources>

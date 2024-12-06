@@ -1,6 +1,7 @@
 package regis.vitor.joao.applicationteste
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import android.widget.Button
 import androidx.activity.ComponentActivity
@@ -24,14 +25,51 @@ class MainActivity : ComponentActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        createListeners()
+
+        Log.i("TAG_INFO", "onCreate invocado!")
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        Log.i("TAG_INFO", "onStart invocado!")
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        Log.i("TAG_INFO", "onResume invocado!")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+
+        Log.i("TAG_INFO", "onRestart invocado!")
+    }
+
+    override fun onPause() {
+        super.onPause()
+
+        Log.i("TAG_INFO", "onPause invocado!")
+    }
+
+    override fun onStop() {
+        super.onStop()
+
+        Log.i("TAG_INFO", "onStop invocado!")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        Log.i("TAG_INFO", "onDestroy invocado!")
+    }
+
+    fun createListeners () {
         var value1: Double
         var value2: Double
         var result: Double
-
-        binding.sum.setOnClickListener() {
-            binding.textView.text = "Botão acionado"
-        }
-
 
         binding.sum.setOnClickListener() {
             value1 = binding.num1.text.toString().toDoubleOrNull() ?: 0.0

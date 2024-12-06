@@ -11,9 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Calculadora"
-        android:textSize="30sp"
-        tools:ignore="HardcodedText" />
+        android:text="@string/calc"
+        android:textSize="30sp" />
 
     <EditText
         android:id="@+id/num1"
@@ -21,9 +20,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number|numberDecimal|numberSigned"
-        android:hint="Insira um número"
-        android:textSize="20sp"
-        tools:ignore="HardcodedText" />
+        android:hint="@string/numEntry"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/num2"
@@ -31,9 +29,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number|numberDecimal|numberSigned"
-        android:hint="Insira um número"
-        android:textSize="20sp"
-        tools:ignore="HardcodedText" />
+        android:hint="@string/numEntry"
+        android:textSize="20sp" />
 
 
     <LinearLayout
@@ -45,9 +42,8 @@
             android:id="@+id/resultado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Resultado: "
-            android:textSize="20sp"
-            tools:ignore="HardcodedText" />
+            android:text="@string/res"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/resultView"
@@ -68,16 +64,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="SOM"
-            tools:ignore="HardcodedText" />
+            android:text="@string/soma" />
 
         <Button
             android:id="@+id/sub"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="SUB"
-            tools:ignore="HardcodedText" />
+            android:text="@string/sub" />
     </LinearLayout>
 
     <LinearLayout
@@ -92,16 +86,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="MUL"
-            tools:ignore="HardcodedText" />
+            android:text="@string/mul" />
 
         <Button
             android:id="@+id/div"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="DIV"
-            tools:ignore="HardcodedText" />
+            android:text="@string/div" />
     </LinearLayout>
 
 
