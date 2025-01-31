@@ -1,5 +1,7 @@
 package regis.vitor.joao.applicationteste
 
+import android.content.Intent
+import regis.vitor.joao.applicationteste.Activity2
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
@@ -97,6 +99,10 @@ class MainActivity : ComponentActivity() {
             value2 = binding.num2.text.toString().toDoubleOrNull() ?: 0.0
             result = value1 / value2
             binding.resultView.text = String.format("%.2f", result)
+
+            //val intent = Intent(this, Activity2::class.java)
+            //intent.putExtra("data", "blah")
+            //startActivity(intent)
         }
 
 
